@@ -1,0 +1,27 @@
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social {
+    margin-left: 70px;
+}
+.footer-so-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.footer-socials-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff; 
+}  
+.footer-socials-item:not(:last-child) {
+    margin-right: 10px;
+}
