@@ -9,8 +9,13 @@
     text-transform: uppercase;
 }
 .form-subscribe {
-    display: flex;
-    align-items: baseline;
+
+
+    @include mq(desktop) {
+        display: flex;
+        align-items: baseline;
+        }
+
 }
 .input-email {
     width: 358px;
@@ -58,9 +63,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.153);
 }
 
 .footer-button-content {
-    display: flex;
+    @include mq(desktop) {
+        display: flex;
     justify-content: center;
     align-items: center;
+        }
+        justify-content: center;
+        align-items: center;
+  
 }
 .footer-button-icon{
     margin-left: 10px;

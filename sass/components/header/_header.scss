@@ -4,6 +4,9 @@ border-bottom: 1px solid #ececec;
 }  
 
 .header-container {
-display: flex;
-align-items: center;
+    position: relative;
+// display: flex;
+// align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
 }    

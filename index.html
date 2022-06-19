@@ -18,59 +18,89 @@
     <!-- хедер -->
     <header class="header"> 
         <div class="container header-container">
-            <nav class="navigation"> 
-
-                <a class="navigation__logo logo" href="./index.html">
-                    
+            <a class="navigation__logo logo" href="./index.html">    
                 <span class="logo accent">Web</span><span class="logo basic">Studio</span>
                 </a>
-                    <button class="menu-button is-open" type="button" aria-expanded="true"
+                    <button class="menu-button" type="button" aria-expanded="false"
                             aria-controls="menu-container" data-menu-button>
-                        <svg class="header-menu__icon"
-                            width="24"  
-                            height="24"
+                        <svg 
+                            width="40"  
+                            height="40"
                             aria-label="переключатель мобильного меню">
-                            <use class="header-menu__icon-cross" href="./images/icon/sprite.svg#menu-mobil"></use>
-                            <use class="header-menu__icon-menu" href="./images/icon/sprite.svg#close-mobil"></use>
+                            <use class="icon-cross" href="./images/icon/sprite.svg#cross"></use>
+                            <use class="icon-menu" href="./images/icon/sprite.svg#menu"></use>
                         </svg>
-                    </button>
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                <ul class="navigation-list list">
-                    <li class="item-navigation item "><a  class="link link-after link-navigation" href="./index.html">Студия</a></li>
-                    <li class="item-navigation item"><a  class="link link-navigation" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item-navigation item"><a  class="link link-navigation" href="Контакты">Контакты</a></li>
-                </ul>
-            </nav>
-            
-                <ul class="site-nav list">
-                    <li class="group-item">
-                        <a class="link-contact"  href="mailto:info@devstudio.com">
-                            <svg class="icon" width="16" height="12">
-                                <use href="./images/icon/sprite.svg#envelope"></use>
+                    </button> 
+                <div class="menu-container " id="menu-container" data-menu>
+                    <nav class="navigation"> 
+                    <ul class="navigation-list list">
+                        <li class="item-navigation item "><a  class="link link-navigation link-after " href="./index.html">Студия</a></li>
+                        <li class="item-navigation item"><a  class="link link-navigation" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item-navigation item"><a  class="link link-navigation" href="Контакты">Контакты</a></li>
+                    </ul>
+                </nav>
+                    <ul class="site-nav list">
+                        <li class="group-item">
+                            <a class="link-contact"  href="mailto:info@devstudio.com">
+                                <svg class="icon" width="16" height="12">
+                                    <use href="./images/icon/sprite.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+    
+                        <li class="group-item">
+                            <a class="link-contact" href="tel:380961111111">
+                                <svg class="icon" width="10" height="16">
+                                <use href="./images/icon/sprite.svg#smartphone"></use>
                             </svg>
-                            info@devstudio.com</a>
-                    </li>
+                            +38 096 111 11 11</a>
+                        </li>
+                    </ul>
 
-                    <li class="group-item">
-                        <a class="link-contact" href="tel:380961111111">
-                            <svg class="icon" width="10" height="16">
-                            <use href="./images/icon/sprite.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                    </li>
-                </ul>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                          <a
+                            href=""
+                            class="menu__link"
+                            target="_blank"
+                            rel="noopener noreferer"
+                            lang="en"
+                            >Instagram</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a
+                            href=""
+                            class="menu__link"
+                            target="_blank"
+                            rel="noopener noreferer"
+                            lang="en"
+                            >Twitter</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a
+                            href=""
+                            class="menu__link"
+                            target="_blank"
+                            rel="noopener noreferer"
+                            lang="en"
+                            >Facebook</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a
+                            href=""
+                            class="menu__link"
+                            target="_blank"
+                            rel="noopener noreferer"
+                            lang="en"
+                            >LinkedIn</a
+                          >
+                        </li>
+                      </ul>
+                </div> 
+                
             
         </div>
 
@@ -392,7 +422,7 @@
         
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-flex">
             <div class="footer-contacts">
                 <a class="logotype logo-position" href="./index.html">
@@ -456,7 +486,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer> 
 
         
             <!-- <div data-modal class="backdrop is-hidden">
@@ -531,10 +561,11 @@
 
 
                 </div>
-            </div>
-            <script src="./js/modal.js"></script> -->
+            </div>-->
 
-            
+            <script src="./js/modal.js"></script> 
+
+            <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

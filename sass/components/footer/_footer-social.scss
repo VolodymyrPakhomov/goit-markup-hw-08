@@ -1,6 +1,10 @@
 .footer-social-list {
+    @include mq(desktop){
     display: flex;
     justify-content: center;
+}
+justify-content: center;
+display: flex;
 }
 
 .footer-social {

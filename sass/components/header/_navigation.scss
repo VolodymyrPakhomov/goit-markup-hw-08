@@ -1,3 +1,53 @@
+.menu-button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+  top: 6px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #fff;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+
+}
+.menu-button .icon-cross{
+    display: none;
+}
+.menu-button.is-open .icon-cross{
+    display: block;
+}
+.menu-button.is-open .icon-menu{
+    display: none;
+}
+.menu-container{
+    display: none;
+    &.is-open{
+        display: block;
+    }
+
+}
+.menu-container{
+position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 40px 48px;
+}
+.menu-container.is-open{
+    display: block;
+    top: 0;
+    
+}
+
 .logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -17,15 +67,16 @@
 }
 .navigation__logo{
     margin-right: 93px;
+   
 }
 
 .navigation-list {
-    display: flex;
+    // display: flex;
     
 & .link-navigation {
 display: block;
-padding-top: 32px;
-padding-bottom: 32px;
+// padding-top: 32px;
+// padding-bottom: 32px;
 } 
 }
 .navigation-list {
@@ -35,15 +86,15 @@ padding-bottom: 32px;
 } 
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-}
+// .navigation {
+//     display: flex;
+//     align-items: center;
+// }
 
-.header-group {
-    display: flex;
-    margin-left: auto;
-}
+// .header-group {
+//     display: flex;
+//     margin-left: auto;
+// }
 
 .item-navigation{
     list-style-type: none;
@@ -58,7 +109,11 @@ padding-bottom: 32px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
+    font-size: 40px;
+    @include mq(tablet) {
     font-size: 14px;
+    
+}
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
@@ -68,8 +123,8 @@ padding-bottom: 32px;
 .link-after{
 position: relative;
 color: var(--accent-color);
-padding-top: 32px;
-padding-bottom: 32px;
+// padding-top: 32px;
+// padding-bottom: 32px;
 
 &::after{
 position: absolute;

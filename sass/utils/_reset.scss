@@ -19,14 +19,9 @@
     p {
     margin: 0;
     }
-.list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
-    
-.link {
-        text-decoration: none;
-        color: inherit;
-    }
+
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
