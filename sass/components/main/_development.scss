@@ -1,21 +1,21 @@
 
 .development {
     padding-top: 0px;
+    display: none;
+    @include mq(desktop) {
+    display: block;
+}
 }
 .development__list{
-     display: flex;
- }
-
-.development__list li {
-    margin-right: 30px;
-}
-
-.development__list li:nth-child(3n) {
-    margin-right: 0;
+    display: flex;
 }
 
 .development__item{
+    margin-right: 30px;
     position: relative;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
 }
 .development__text-thumb {
     color: var(--primary-background-color);

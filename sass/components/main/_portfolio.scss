@@ -2,7 +2,13 @@
 .portfolio__button-list {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @include mq (tablet) {
     justify-content: center;
+    }
+
 }
 .portfolio__info {
     padding-top: 20px;
@@ -44,6 +50,12 @@
 }
 .portfolio__filter-button {
     margin-right: 8px;
+
+}
+.portfolio__filter-button:not(:nth-last-child(-n+2)) {
+@include mq(mobile-only){
+    margin-bottom: 15px;
+}
 }
 // card-list
 .portfolio__card-list {
@@ -53,6 +65,16 @@
 }
 
 .portfolio__card-example{
+    @include mq(not-desktop){
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    @include mq(tablet-only){
+    flex-basis: calc((100% - 30px) / 2);
+
+    }
+@include mq(desktop) {
     margin-right: 30px;
     margin-bottom: 30px;
 &:nth-child(3n) {
@@ -60,6 +82,13 @@
     }
 &:nth-last-child(-n + 3) {
         margin-bottom: 0;
+    }
+}
+}
+
+.portfolio__card-example:nth-child(odd) {
+    @include mq(tablet-only) {
+    margin-right: 30px;
     }
 }
 .portfolio__name-works{
