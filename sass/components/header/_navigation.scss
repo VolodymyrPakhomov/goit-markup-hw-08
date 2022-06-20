@@ -51,6 +51,7 @@ padding: 40px 48px;
 .menu-container.is-open{
     display: block;
     top: 0;
+    z-index: 2;
     
 }
 .menu-container{
