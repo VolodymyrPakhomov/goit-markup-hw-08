@@ -81,6 +81,9 @@ padding: 40px 48px;
 }
 .navigation__logo{
     margin-right: 93px;
+    @include mq(tablet-only) {
+        margin-right: 83px;
+    }
    
 }
 
@@ -129,7 +132,13 @@ padding-bottom: 32px;
     &:not(:last-child) {
         margin-right: 50px;
         margin-bottom: 0;
-    } 
+    }  
+}
+@include mq(tablet-only) {
+    &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }  
 }
 }
 

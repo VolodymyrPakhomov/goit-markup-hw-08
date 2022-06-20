@@ -11,6 +11,9 @@ display: flex;
     @include mq(desktop){
     margin-left: 70px;
     }
+    @include mq(not-desktop) {
+        margin-bottom: 60px;
+        }
 }
 .footer-so-text {
     font-family: Roboto;
