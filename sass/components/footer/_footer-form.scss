@@ -1,12 +1,19 @@
-.footer-form-container {
-    margin-left: auto;
-}
+// .footer-form-container {
+//     margin-left: auto;
+// }
 .footer-text-subscribe {
     display: inline-block;
     margin-bottom: 20px;
     color: #fff;
     line-height: 1.14;
     text-transform: uppercase;
+}
+.form-subscribe{
+    @media screen and (min-width:768px) and (max-width:1198){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 .form-subscribe {
 
@@ -51,7 +58,6 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
 cursor: pointer;
-
 border-radius: 4px;
 border: 0;
 box-shadow: 250 ms cubic-bezier(0.4, 0, 0.2, 1);

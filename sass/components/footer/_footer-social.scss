@@ -8,7 +8,9 @@ display: flex;
 }
 
 .footer-social {
+    @include mq(desktop){
     margin-left: 70px;
+    }
 }
 .footer-so-text {
     font-family: Roboto;

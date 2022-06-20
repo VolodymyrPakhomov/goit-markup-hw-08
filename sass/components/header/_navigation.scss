@@ -17,37 +17,51 @@
   z-index: 10;
 
 }
+.menu-button.is-open .icon-menu,
 .menu-button .icon-cross{
-    display: none;
+    @media screen and (max-width:767px){
+        display: none;
+    }
 }
 .menu-button.is-open .icon-cross{
-    display: block;
-}
-.menu-button.is-open .icon-menu{
-    display: none;
-}
-.menu-container{
-    display: none;
-    &.is-open{
-        display: block;
+    @media screen and (max-width:767px){
+            display: block;
     }
-
 }
+
+
+.menu-button {
+    @media screen and (min-width:767px){
+        display: none;
+    }
+}
+
 .menu-container{
+    @media screen and (max-width:767px){
 position: absolute;
+padding: 40px 48px;
+    }
   display: none;
   top: 100%;
   left: 0;
   width: 100%;
   background-color: white;
-  padding: 40px 48px;
+  
 }
 .menu-container.is-open{
     display: block;
     top: 0;
     
 }
-
+.menu-container{
+    display: none;
+    &.is-open{
+        display: block;
+    }
+ @media screen and (min-width:768px){
+    display: flex;
+ }
+}
 .logo {
     font-family: 'Raleway';
     font-style: normal;
@@ -71,13 +85,15 @@ position: absolute;
 }
 
 .navigation-list {
-    // display: flex;
+    @media screen and (min-width:768px){
+        display: flex;
     
-& .link-navigation {
-display: block;
-// padding-top: 32px;
-// padding-bottom: 32px;
+    & .link-navigation {
+   display: block;
+padding-top: 32px;
+padding-bottom: 32px;
 } 
+}
 }
 .navigation-list {
 
@@ -86,22 +102,35 @@ display: block;
 } 
 }
 
-// .navigation {
-//     display: flex;
-//     align-items: center;
-// }
 
-// .header-group {
-//     display: flex;
-//     margin-left: auto;
-// }
+    .navigation {
+        @include mq(mobile-only){
+            margin-bottom: 50px;
+    }
+        @media screen and (min-width:768px){
+        display: flex;
+        align-items: center;
+    }
+    }    
+    .header-group {
+        @media screen and (min-width:768px){
+        display: flex;
+        margin-left: auto;
+    }
+}
+
 
 .item-navigation{
     list-style-type: none;
-
+    &:not(:last-child) {
+    margin-bottom: 34px;
+    }
+@include mq(tablet) {
     &:not(:last-child) {
         margin-right: 50px;
+        margin-bottom: 0;
     } 
+}
 }
 
 
@@ -125,7 +154,7 @@ position: relative;
 color: var(--accent-color);
 // padding-top: 32px;
 // padding-bottom: 32px;
-
+@media screen and (min-width: 768px){
 &::after{
 position: absolute;
 content:"" ;
@@ -137,5 +166,6 @@ background-color: var(--button-bg);
 left: 0;
 bottom: 0;
 bottom: -1px;
+}
 }
 }
