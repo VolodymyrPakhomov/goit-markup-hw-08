@@ -1,3 +1,19 @@
+html {
+  box-sizing: border-box;
+  }
+
+  *,
+  *::after,
+  *::before {
+      box-sizing: inherit;
+  }
+
+body{
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  font-family: 'Roboto',sans-serif ;
+  letter-spacing: 0.03em;
+}
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
