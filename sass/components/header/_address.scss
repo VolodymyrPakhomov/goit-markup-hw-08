@@ -8,6 +8,11 @@
     }
     }
 
+    .group-item .link-contact--corent{
+        @include mq(desktop) {
+        margin-left: 50px;
+    }
+    }
 .link-contact{
 
     @media screen and (max-width:767px){

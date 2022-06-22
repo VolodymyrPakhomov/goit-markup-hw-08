@@ -30,11 +30,7 @@ flex-basis: calc((100% - 180px) / 6);
 }
 
 
-.clients__item:not(:last-child) {
-    @include mq(desktop) {
-        margin-right: 30px;
-    }
-}
+//   
 
 .clients__link {
     display: flex;
