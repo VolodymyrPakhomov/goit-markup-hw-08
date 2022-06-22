@@ -52,6 +52,7 @@ padding: 40px 48px;
 }
 .menu-container{
     display: none;
+    
     &.is-open{
         display: block;
     }
