@@ -63,14 +63,22 @@
 
                     <ul class="menu__list">
                         <li class="menu__item">
-                          <a
+                        <a
                             href=""
                             class="menu__link"
                             target="_blank"
                             rel="noopener noreferer"
                             lang="en"
-                            >Instagram</a
-                          >
+                            >Instagram</a>
+                        </li>
+                        <li class="menu__item">
+                        <a
+                            href=""
+                            class="menu__link"
+                            target="_blank"
+                            rel="noopener noreferer"
+                            lang="en"
+                            >Twitter</a>
                         </li>
                         <li class="menu__item">
                           <a
@@ -79,21 +87,10 @@
                             target="_blank"
                             rel="noopener noreferer"
                             lang="en"
-                            >Twitter</a
-                          >
+                            >Facebook</a>
                         </li>
                         <li class="menu__item">
-                          <a
-                            href=""
-                            class="menu__link"
-                            target="_blank"
-                            rel="noopener noreferer"
-                            lang="en"
-                            >Facebook</a
-                          >
-                        </li>
-                        <li class="menu__item">
-                          <a
+                        <a
                             href=""
                             class="menu__link"
                             target="_blank"
@@ -128,7 +125,48 @@
                 <li class="portfolio__card-example item  ">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__thumb-card">
-                            <img class="portfolio__img" src="./images/homework-2/img-2-1.jpg" alt="фото" width="370" height="294">
+
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/work/1-l.jpg    1x,
+                                    ./images/work/1-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/work/1-m.jpg   1x,
+                                    ./images/work/1-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/work/1-s.jpg   1x,
+                                    ./images/work/1-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="gallery-img"
+                                src="./images/work/1-l.jpg"
+                                alt=""
+                                width="370"
+                                height="294"
+                                loading="lazy"
+                                />
+                                </picture>
+
+
                             <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                 сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                 или частном лице.</p>
@@ -144,7 +182,48 @@
                 <li class="item portfolio__card-example">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__thumb-card">
-                            <img class="portfolio__img" src="./images/homework-2/img-2-2.jpg" alt="фото" width="370" height="294">
+
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/work/2-l.jpg    1x,
+                                    ./images/work/2-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/work/2-m.jpg   1x,
+                                    ./images/work/2-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/work/2-s.jpg   1x,
+                                    ./images/work/2-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="gallery-img"
+                                src="./images/work/2-l.jpg"
+                                alt=""
+                                width="370"
+                                height="294"
+                                loading="lazy"
+                                />
+                                </picture>
+
+
                             <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                             сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                             или частном лице.</p>
@@ -161,7 +240,47 @@
                 <li class="item portfolio__card-example">
                     <a class="portfolio__link link" href="">
                         <div class="portfolio__thumb-card">
-                            <img class="portfolio__img" src="./images/homework-2/img-2-3.jpg" alt="фото" width="370" height="294">
+
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/work/3-l.jpg    1x,
+                                    ./images/work/3-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/work/3-m.jpg   1x,
+                                    ./images/work/3-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/work/3-s.jpg   1x,
+                                    ./images/work/3-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="gallery-img"
+                                src="./images/work/3-l.jpg"
+                                alt=""
+                                width="370"
+                                height="294"
+                                loading="lazy"
+                                />
+                                </picture>
+
                             <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                 сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                 или частном лице.</p>
@@ -178,7 +297,45 @@
                     <li class="item portfolio__card-example">
                         <a class="portfolio__link link" href="">
                             <div class="portfolio__thumb-card">
-                                <img class="portfolio__img" src="./images/homework-2/img-2-4.jpg" alt="фото" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+    
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/work/4-l.jpg    1x,
+                                        ./images/work/4-l-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для планшетних екранів -->
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                        ./images/work/4-m.jpg   1x,
+                                        ./images/work/4-m-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для мобільних екранів -->
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                        ./images/work/4-s.jpg   1x,
+                                        ./images/work/4-s-2x.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                    <img
+                                    class="gallery-img"
+                                    src="./images/work/4-l.jpg"
+                                    alt=""
+                                    width="370"
+                                    height="294"
+                                    loading="lazy"
+                                    />
+                                    </picture>
                                 <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                     или частном лице.</p>
@@ -195,7 +352,45 @@
                     <li class="item portfolio__card-example">
                         <a class="portfolio__link link" href="">
                             <div class="portfolio__thumb-card">
-                                <img class="portfolio__img" src="./images/homework-2/img-2-5.jpg" alt="фото" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+    
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/work/5-l.jpg    1x,
+                                        ./images/work/5-l-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для планшетних екранів -->
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                        ./images/work/5-m.jpg   1x,
+                                        ./images/work/5-m-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для мобільних екранів -->
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                        ./images/work/5-s.jpg   1x,
+                                        ./images/work/5-s-2x.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                    <img
+                                    class="gallery-img"
+                                    src="./images/work/5-l.jpg"
+                                    alt=""
+                                    width="370"
+                                    height="294"
+                                    loading="lazy"
+                                    />
+                                    </picture>
                                 <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                         или частном лице.</p>
@@ -211,7 +406,45 @@
                     <li class="item portfolio__card-example">
                         <a class="portfolio__link link" href="">
                             <div class="portfolio__thumb-card">
-                                <img class="portfolio__img" src="./images/homework-2/img-2-6.jpg" alt="фото" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+    
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/work/6-l.jpg    1x,
+                                        ./images/work/6-l-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для планшетних екранів -->
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                        ./images/work/6-m.jpg   1x,
+                                        ./images/work/6-m-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для мобільних екранів -->
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                        ./images/work/6-s.jpg   1x,
+                                        ./images/work/6-s-2x.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                    <img
+                                    class="gallery-img"
+                                    src="./images/work/6-l.jpg"
+                                    alt=""
+                                    width="370"
+                                    height="294"
+                                    loading="lazy"
+                                    />
+                                    </picture>
                                 <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                     или частном лице.</p>
@@ -228,7 +461,45 @@
                     <li class="item portfolio__card-example">
                         <a class="portfolio__link link" href="">
                             <div class="portfolio__thumb-card">
-                                <img class="portfolio__img" src="./images/homework-2/img-2-7.jpg" alt="фото" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+    
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/work/7-l.jpg    1x,
+                                        ./images/work/7-l-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для планшетних екранів -->
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                        ./images/work/7-m.jpg   1x,
+                                        ./images/work/7-m-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для мобільних екранів -->
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                        ./images/work/7-s.jpg   1x,
+                                        ./images/work/7-s-2x.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                    <img
+                                    class="gallery-img"
+                                    src="./images/work/7-l.jpg"
+                                    alt=""
+                                    width="370"
+                                    height="294"
+                                    loading="lazy"
+                                    />
+                                    </picture>
                                 <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                     или частном лице.</p>
@@ -245,7 +516,45 @@
                     <li class="item portfolio__card-example">
                         <a class="portfolio__link link" href="">
                             <div class="portfolio__thumb-card">
-                                <img class="portfolio__img" src="./images/homework-2/img-2-8.jpg" alt="фото" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+    
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/work/8-l.jpg    1x,
+                                        ./images/work/8-l-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для планшетних екранів -->
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                        ./images/work/8-m.jpg   1x,
+                                        ./images/work/8-m-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для мобільних екранів -->
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                        ./images/work/8-s.jpg   1x,
+                                        ./images/work/8-s-2x.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                    <img
+                                    class="gallery-img"
+                                    src="./images/work/8-l.jpg"
+                                    alt=""
+                                    width="370"
+                                    height="294"
+                                    loading="lazy"
+                                    />
+                                    </picture>
                                 <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                     или частном лице.</p>
@@ -261,7 +570,46 @@
                     <li class="item portfolio__card-example">
                         <a class="portfolio__link link" href="">
                             <div class="portfolio__thumb-card">
-                                <img class="portfolio__img" src="./images/homework-2/img-2-9.jpg" alt="фото" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+    
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/work/9-l.jpg    1x,
+                                        ./images/work/9-l-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для планшетних екранів -->
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                        ./images/work/9-m.jpg   1x,
+                                        ./images/work/9-m-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Набір зображень для мобільних екранів -->
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                        ./images/work/9-s.jpg   1x,
+                                        ./images/work/9-s-2x.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                    <img
+                                    class="gallery-img"
+                                    src="./images/work/1-l.jpg"
+                                    alt=""
+                                    width="370"
+                                    height="294"
+                                    loading="lazy"
+                                    />
+                                    </picture>
+                                <!-- <img class="portfolio__img" src="./images/work/9work-l-img.jpg" alt="фото" width="370" height="294"> -->
                                 <p class="portfolio__text-card"> Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                 сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                                 или частном лице.</p>

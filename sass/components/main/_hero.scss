@@ -10,14 +10,23 @@
     height: 600px;
     margin-left: auto;
     margin-right: auto; 
-    @include mq(mobile){
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Header-img.jpg);
+    
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-s.jpg);
+    @include mq(retina){
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-s-2x.jpg);    
     }
+
     @include mq(tablet-only){
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Header.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-m.jpg);
+        @include mq(retina){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-m-2x.jpg);    
+        }
     }
     @include mq(desktop) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/hero/Img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-l.jpg);
+    @include mq(retina){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-l-2x.jpg);    
+        }
     }
 
     background-position: center;

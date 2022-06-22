@@ -116,7 +116,7 @@
                 для вашего бизнеса
             </h1>
             <button data-modal-open class="button" type="button">Заказать услугу</button>
-          
+        
             </div>
         </section>
 
@@ -173,7 +173,19 @@
         
                         <ul class="development__list list">
                             <li class="development__item">
-                                <img class="development__img" src="./images/homework-1/box/img-0.jpg" alt="програмирование" width="370" height="294">
+
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/do/1.jpg   1x,
+                                        ./images/tim/1-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <img class="development__img" src="./images/do/2.jpg" alt="палитра" width="370" height="294">
+                                </picture>
                                 <div class="development__over-thumb">
                                     <p class="development__text-thumb">
                                         Десктопные приложения
@@ -182,7 +194,19 @@
                             </li>
             
                             <li class="development__item">
-                                <img class="development__img" src="./images/homework-1/box/img-1.jpg" alt="телефон" width="370" height="294">
+
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/do/2.jpg   1x,
+                                        ./images/tim/2-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <img class="development__img" src="./images/do/2.jpg" alt="палитра" width="370" height="294">
+                                </picture>
                                 <div class="development__over-thumb">
                                     <p class="development__text-thumb">
                                         Мобильные приложения
@@ -190,7 +214,18 @@
                             </li>
             
                             <li class="development__item">
-                                <img class="development__img" src="./images/homework-1/box/img-2.jpg" alt="палитра" width="370" height="294">
+                                <picture>
+                                    <!-- Набір зображень для десктопних екранів -->
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                        ./images/do/3.jpg   1x,
+                                        ./images/tim/3-2X.jpg 2x
+                                        "
+                                        type="image/jpg"
+                                    />
+                                    <img class="development__img" src="./images/do/3.jpg" alt="палитра" width="370" height="294">
+                                </picture>
                                 <div class="development__over-thumb">
                                     <p class="development__text-thumb">
                                         Дизайнерские решения
@@ -206,7 +241,47 @@
             
                     <ul class="team__list list">
                         <li class="team__card">
-                            <img class="team__img" src="./images/homework-1/team/img-3.jpg" alt="Игорь Демьяненко" width="270" height="260">
+
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/tim/1-l.jpg    1x,
+                                    ./images/tim/1-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/tim/1-m.jpg   1x,
+                                    ./images/tim/1-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/tim/1-s.jpg   1x,
+                                    ./images/tim/1-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="team__img"
+                                src="./images/tim/1-l.jpg"
+                                alt=""
+                                width="270"
+                                height="260"
+                                loading="lazy"
+                                />
+                            </picture>
+
                             <div class="team__command-title">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
                                 <p class="team__job">Product Designer</p>
@@ -246,7 +321,47 @@
                         </li>
                 
                         <li class="team__card">
-                            <img class="team__img" src="./images/homework-1/team/img-4.jpg" width="270" height="260">
+
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/tim/2-l.jpg    1x,
+                                    ./images/tim/2-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/tim/2-m.jpg   1x,
+                                    ./images/tim/2-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/tim/2-s.jpg   1x,
+                                    ./images/tim/2-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="team__img"
+                                src="./images/tim/2-l.jpg"
+                                alt=""
+                                width="270"
+                                height="260"
+                                loading="lazy"
+                                />
+                            </picture>
+
                             <div class="team__command-title">
                                 <h3 class="team__name">Ольга Репина</h3>
                                 <p class="team__job">Frontend Developer</p>
@@ -286,7 +401,48 @@
                         </li>
                 
                         <li class="team__card">
-                            <img class="team__img" src="./images/homework-1/team/img-5.jpg" width="270" height="260">
+                            
+
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/tim/3-l.jpg    1x,
+                                    ./images/tim/3-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/tim/3-m.jpg   1x,
+                                    ./images/tim/3-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/tim/3-s.jpg   1x,
+                                    ./images/tim/3-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="team__img"
+                                src="./images/tim/3-l.jpg"
+                                alt=""
+                                width="270"
+                                height="260"
+                                loading="lazy"
+                                />
+                            </picture>
+
                             <div class="team__command-title">
                                 <h3 class="team__name">Николай Тарасов</h3>
                                 <p class="team__job">Marketing</p>
@@ -326,7 +482,47 @@
                         </li>
                 
                         <li class="team__card">
-                            <img class="team__img" src="./images/homework-1/team/img-6.jpg" width="270" height="260">
+                            
+                            <picture>
+                                <!-- Набір зображень для десктопних екранів -->
+
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                    ./images/tim/4-l.jpg    1x,
+                                    ./images/tim/4-l-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для планшетних екранів -->
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                    ./images/tim/4-m.jpg   1x,
+                                    ./images/tim/4-m-2X.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Набір зображень для мобільних екранів -->
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                    ./images/tim/4-s.jpg   1x,
+                                    ./images/tim/4-s-2x.jpg 2x
+                                    "
+                                    type="image/jpg"
+                                />
+                                <!-- Дефолтне зображення, яке відпрацює у будь-якому випадку -->
+                                <img
+                                class="team__img"
+                                src="./images/tim/4-l.jpg"
+                                alt=""
+                                width="270"
+                                height="260"
+                                loading="lazy"
+                                />
+                            </picture>
+
                             <div class="team__command-title">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                                 <p class="team__job">UI Designer</p>
@@ -474,7 +670,7 @@
                 <b class="footer-text-subscribe">Подпишитесь на рассылку</b>
                 <form class="form-subscribe" autocomplete="off" >
                     <label for="footer-email" class="visually-hidden"  >почта</label>
-                    <!-- <input class="input-email" name="email" type="email" id="footer-email" placeholder="E-mail" > -->
+                    <input class="input-email" name="email" type="email" id="footer-email" placeholder="E-mail" > 
                     <button class="button-subscribe" type="submit">
                         <span class="footer-button-content">
                             Подписаться
@@ -536,25 +732,24 @@
                             <span class="form-label" >Комментарий</span>
                             
                             <textarea  class="form-input-comments" name="comments"  placeholder="Введите текст"></textarea>
-             
 
                         </label>
 
                         <label class="form-checkbox">
                             <span class="checkbox-container">
-                              <input class="checkbox" name="agreement" type="checkbox">
-                              <svg class="checkbox-icon-checked" width="16px" height="15px" >
+                            <input class="checkbox" name="agreement" type="checkbox">
+                            <svg class="checkbox-icon-checked" width="16px" height="15px" >
                                 <use  href="./images/icon/sprite.svg#check"></use>
-                              </svg>
-                              <span class="checkbox-icon-unchecked"></span>
+                            </svg>
+                            <span class="checkbox-icon-unchecked"></span>
                             </span>
                             <span class="checkbox-label">
-                              Соглашаюсь с рассылкой и принимаю
-                              <a class="checkbox-label-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="checkbox-label-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
                             </span>
-                          </label>
+                        </label>
 
-                          <button  class="button-subscribe button-subscribe-crnter" type="submit">Отправить</button>
+                        <button  class="button-subscribe button-subscribe-crnter" type="submit">Отправить</button>
     
 
                     </form>
