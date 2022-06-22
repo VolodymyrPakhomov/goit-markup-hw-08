@@ -62,14 +62,14 @@
 .portfolio__card-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    
 }
 
-.portfolio__card-example{
+.portfolio__card-example {
     @include mq(not-desktop){
     display: block;
     width: 100%;
-    margin-bottom: 30px;
+    
     }
     @include mq(tablet-only){
     flex-basis: calc((100% - 30px) / 2);
@@ -86,12 +86,27 @@
     }
 }
 }
+    .portfolio__card-example:not(:last-child){
+        @include mq(not-desktop) {
+            margin-bottom: 30px;
+        }
+    }
 
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 30px;
+    }
 .portfolio__card-example:nth-child(odd) {
     @include mq(tablet-only) {
     margin-right: 30px;
     }
 }
+.portfolio__card-example:nth-child(odd) {
+    @include mq(tablet-only) {
+    margin-right: 30px;
+    }
+}
+
+
 .portfolio__name-works{
 font-weight: 700; 
 font-size: 18px;
