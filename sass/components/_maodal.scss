@@ -18,6 +18,7 @@
 }
 
 .modal{
+    background-color: #fff;
     @include mq(mobile){
     position: relative;
     opacity: 1;

@@ -16,6 +16,14 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+
+    
+    @include mq(tablet-only){
+        display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    }
 }
 }
 .footer-form-container{
@@ -54,7 +62,7 @@
     text-decoration: none;
     }
     
-    .footer-flex {
+    .footer-flex{
         @include mq(desktop) {
             display: flex;
             align-items: baseline;

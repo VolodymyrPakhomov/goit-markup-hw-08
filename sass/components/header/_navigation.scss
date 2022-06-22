@@ -41,7 +41,7 @@
 position: absolute;
 padding: 40px 48px;
     }
-  
+
 }
 .menu-container.is-open{
     display: block;
@@ -55,9 +55,10 @@ padding: 40px 48px;
     &.is-open{
         display: block;
     }
- @media screen and (min-width:768px){
+    @media screen and (min-width:768px){
     display: flex;
- }
+    align-items: center;
+    }
 }
 .logo {
     font-family: 'Raleway';
