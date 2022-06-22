@@ -1,12 +1,18 @@
 .title-section{
-    margin-bottom: 50px;
-    
+ 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    
     text-align: center;
+
+    @include mq(mobile){
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+    }
+    @include mq(desktop){
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    }
     }

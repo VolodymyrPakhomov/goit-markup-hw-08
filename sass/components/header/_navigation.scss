@@ -41,17 +41,13 @@
 position: absolute;
 padding: 40px 48px;
     }
-  display: none;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: white;
   
 }
 .menu-container.is-open{
     display: block;
     top: 0;
     z-index: 2;
+    
     
 }
 .menu-container{

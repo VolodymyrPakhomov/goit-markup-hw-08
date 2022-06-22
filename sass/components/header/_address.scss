@@ -1,7 +1,10 @@
 .group-item{
     list-style-type: none;
-    @media screen and (min-width:768px){
-        margin-left: 30px;
+    
+    &:not(:last-child) {
+        @include mq(tablet-only) {
+            margin-bottom: 10px;
+        }
     }
     }
 
@@ -41,9 +44,9 @@ font-size: 24px;
         line-height: 1.18;
         letter-spacing: 0.02em;
         }
-        @include mq(tablet-only) {
-            padding-top: 10px;
-        }
+        // @include mq(tablet-only) {
+        //     padding-top: 10px;
+        // }
 }
 .site-nav{
     
@@ -56,8 +59,7 @@ font-size: 24px;
         flex-direction: column;
         font-size: 12px;
     line-height: 1.16;
-    margin-top: auto;
-    margin-bottom: auto;
+  
     }
 
     @media screen and (min-width:768px){
