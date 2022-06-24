@@ -14,7 +14,7 @@
     @media screen and (min-width:768px){
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    justify-content: space-around;
 
 
     
@@ -25,12 +25,23 @@
 
     }
 }
+@include mq(desktop) {
+    display: flex;
+    align-items: baseline;
 }
+
+}
+
 .footer-form-container{
     @media screen and (max-width:768px){
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@include mq(tablet-only){
+    width: 100%;
+    margin-top: 60px;
 }
 
 @include mq(desktop){
@@ -69,12 +80,7 @@
     text-decoration: none;
     }
     
-    .footer-flex{
-        @include mq(desktop) {
-            display: flex;
-            align-items: baseline;
-        }
-    }
+    
 
     .footer .logo-position {
         display: block;

@@ -1,23 +1,4 @@
 @charset "UTF-8";
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-  font-family: 'Roboto',sans-serif;
-  letter-spacing: 0.03em;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -89,6 +70,25 @@ a {
   }
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 0.03em;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -124,7 +124,7 @@ a {
 }
 
 .header {
-  bottom: 20px;
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
@@ -201,15 +201,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    position: absolute;
     padding: 40px 48px;
   }
-}
-
-.menu-container.is-open {
-  display: block;
-  top: 0;
-  z-index: 2;
 }
 
 .menu-container {
@@ -218,6 +211,9 @@ a {
 
 .menu-container.is-open {
   display: block;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -585,8 +581,8 @@ a {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero/Heade-l-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/Heade-l-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/Heade-l-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Heade-l-2x.jpg);
   }
 }
 
@@ -988,6 +984,9 @@ a {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1079,9 +1078,8 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1092,6 +1090,17 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1110,6 +1119,13 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-form-container {
+    width: 100%;
+    margin-top: 60px;
   }
 }
 
@@ -1145,17 +1161,6 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
 }
 
 .footer .logo-position {
@@ -1280,6 +1285,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
   }
 }
 
@@ -1297,7 +1303,6 @@ a {
 .input-email {
   width: 100%;
   height: 50px;
-  margin-right: 10px;
   border-radius: 4px;
   padding: 15px;
   font-size: 16px;
@@ -1322,6 +1327,18 @@ a {
 @media screen and (max-width: 1199.98px) {
   .input-email {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .input-email {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-email {
+    margin-right: 12px;
   }
 }
 
@@ -1493,10 +1510,6 @@ a {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .portfolio__card-example:nth-child(odd) {
     margin-right: 30px;
@@ -1601,10 +1614,7 @@ a {
 }
 
 .modal {
-  border-radius: 4px;
-    padding: 40px;
-    cursor: pointer;
-    width: 100%;
+  background-color: #fff;
 }
 
 @media screen and (min-width: 480px) {
