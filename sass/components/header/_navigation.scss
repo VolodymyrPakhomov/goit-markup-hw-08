@@ -48,23 +48,26 @@ padding: 40px 48px;
 //     top: 0;
 //     z-index: 2;
 //     background-color: #fff;
-    
 // }
+
 .menu-container{
     display: none;
     
     &.is-open{
         
-        display: block;
+        display:flex;
+        flex-direction: column;
     top: 0;
     z-index: 2;
     background-color: #fff;
+    height: 100vh;
+
     }
     @media screen and (min-width:768px){
     display: flex;
     align-items: center;
     width: 100%;
-    
+    // flex-direction: column;
     }
 }
 .logo {
