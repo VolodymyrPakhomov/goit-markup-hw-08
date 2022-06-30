@@ -39,7 +39,7 @@
 .menu-container{
     @media screen and (max-width:767px){
 // position: absolute;
-padding: 40px 48px;
+// padding: 40px 48px;
     }
 
 }
@@ -54,15 +54,32 @@ padding: 40px 48px;
     display: none;
     
     &.is-open{
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        // width: 100vw;
+        // height: 100vh;
+        // padding: 40px;
+        // z-index: 99;
+        // background-color: #fff;
+        // transform: translateX(100%);
         
-        display:flex;
-        flex-direction: column;
-    top: 0;
-    z-index: 2;
-    background-color: #fff;
-    height: 100vh;
 
+
+
+
+
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     display:flex;
+    //     flex-direction: column;
+    //     width: 100vw;
+    // height: 100vh;
+    
+    // background-color: #fff;
     }
+
     @media screen and (min-width:768px){
     display: flex;
     align-items: center;
@@ -70,6 +87,7 @@ padding: 40px 48px;
     // flex-direction: column;
     }
 }
+
 .logo {
     font-family: 'Raleway';
     font-style: normal;
