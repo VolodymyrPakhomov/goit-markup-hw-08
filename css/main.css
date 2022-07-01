@@ -198,18 +198,26 @@ body {
   }
 }
 
+.menu-container {
+  display: none;
+}
+
 .menu-container.is-open {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 40px;
   background-color: #fff;
-}
-
-.menu-container {
-  display: none;
+  z-index: 9;
+  padding: 48px 40px;
 }
 
 @media screen and (min-width: 768px) {
